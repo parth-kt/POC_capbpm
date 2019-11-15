@@ -1,0 +1,28 @@
+<div class="container">
+  <h1>Check List</h1>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Value</th>
+        <th scope="col">Note</th>
+        <th scope="col">Status</th>
+        <th scope="col">Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of checklist">
+        <td>{{item.checklistName}}</td>
+        <td>{{item.checklistValue}}</td>
+        <td>{{item.note}}</td>
+        <td>{{item.status}}</td>
+        <td>{{item.type}}</td>
+      </tr>
+      <tr *ngIf="checklist?.length==0">
+        <td colspan="5">No Records Found</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>

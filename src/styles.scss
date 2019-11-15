@@ -1,0 +1,82 @@
+/* You can add global styles to this file, and also import other style files */
+
+html {
+  overflow-x: hidden;
+}
+
+
+//Todo toolbar styling begins
+.toolbar {
+  height: 60px;
+  margin: -8px;
+  display: flex;
+  align-items: center;
+  background-color: #1976d2;
+  color: white;
+  font-weight: 600;
+}
+
+.toolbar img {
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo {
+  height: 40px;
+  margin: 0 16px;
+}
+
+.toolbar #twitter-logo:hover {
+  opacity: 0.8;
+}
+
+//Todo toolbar styling end
+
+
+//Todo content of body styling begins
+.content {
+  display: flex;
+  margin: 32px auto;
+  padding: 0 16px;
+  max-width: 960px;
+  flex-direction: column;
+  align-items: center;
+}
+
+//Todo content of body styling ends
+
+//Todo table styling begins
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+table td {
+  word-break: break-all;
+}
+
+table td,
+table th {
+
+  border: 1px solid #dadada;
+  padding: 5px;
+}
+
+table thead th {
+  text-align: left;
+}
+
+table thead th:nth-child(0),
+table thead th:nth-child(1) {
+  width: 25%;
+}
+
+table thead th:nth-child(2) {
+  width: 20%;
+}
+
+table thead th:nth-child(3) {
+  width: 30%;
+}
+
+//Todo table styling ends
